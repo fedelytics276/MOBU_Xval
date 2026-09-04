@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Credentials and sensitive data
+credentials/
+secrets/
+*.pem
+*.key
+config/prod.yaml
+config/production.yaml
+
+# Model artifacts (use Git LFS for versioning)
+*.pkl
+*.h5
+*.ckpt
+*.pth
+
+# Data files (large datasets should use Git LFS)
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.feather
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Documentation builds
+docs/_build/
+site/

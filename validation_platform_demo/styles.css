@@ -1,0 +1,326 @@
+/* Custom Styles for xVA Validation Platform */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Navbar Branding */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand-main {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.brand-sub {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #adb5bd;
+    margin-top: -2px;
+}
+
+/* Health Score Circle */
+.health-score {
+    padding: 20px;
+}
+
+.score-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Metric Cards */
+.metric-card {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.metric-card h3 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+    color: #495057;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* Test Summary */
+.test-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.test-summary h2 {
+    font-weight: bold;
+}
+
+/* Accordion */
+.accordion-button {
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #0d6efd;
+}
+
+/* Tables */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead {
+    background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Badges */
+.badge {
+    padding: 6px 12px;
+    font-weight: 600;
+}
+
+/* Timeline for Degradation Events */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #dee2e6;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline-content h6 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Charts */
+#calibration-chart,
+#pnl-chart,
+#degradation-chart,
+#benchmark-chart,
+#pnl-decomposition-chart {
+    border-radius: 8px;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.btn-outline-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Alerts Table */
+#alerts-table tr {
+    transition: background-color 0.2s;
+}
+
+#alerts-table tr:hover {
+    background-color: #fff3cd;
+}
+
+/* List Group */
+.list-group-item {
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.list-group-item:hover {
+    border-left-color: #0d6efd;
+    background-color: #f8f9fa;
+}
+
+/* Alert Styles */
+.alert {
+    border-left: 4px solid;
+}
+
+.alert-info {
+    border-left-color: #0dcaf0;
+}
+
+/* Form Elements */
+.form-control,
+.form-select {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .score-circle {
+        width: 100px;
+        height: 100px;
+        font-size: 1.5rem;
+    }
+    
+    .metric-card {
+        margin-bottom: 20px;
+    }
+    
+    .metric-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Animation for loading */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.loading {
+    animation: pulse 2s infinite;
+}
+
+/* Status indicators */
+.status-green {
+    color: #28a745;
+}
+
+.status-amber {
+    color: #ffc107;
+}
+
+.status-red {
+    color: #dc3545;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
