@@ -522,7 +522,7 @@ This solution incorporates proven practices from leading financial institutions:
 
 **For questions or additional information:**
 
-- **Email**: xva-program@company.com
+- **Email**: samuel.sephiri@fedeanalytics.com
 - **Teams**: xVA Transformation Channel
 - **SharePoint**: [Document Repository Link]
 - **Confluence**: [Project Wiki Link]
